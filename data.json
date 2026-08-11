@@ -6,12 +6,55 @@
     "pax": "2人同行"
   },
   "logistics": {
-    "outbound": { "label": "去程航班", "code": "CI 703", "route": "TPE → MNL", "date": "8/17(一)起飛", "depart": "13:30", "arrive": "15:50", "duration": "2小時20分", "note": "建議 11:30 前抵達桃園機場" },
-    "stay1": { "label": "住宿・馬尼拉(第一段)", "name": "Somerset Central Salcedo Makati", "checkin": "8/17 14:00", "checkout": "8/19 12:00", "nights": "2 晚" },
-    "laUnion": { "label": "住宿・La Union", "name": "Ciabel Hotel and Fitness Center", "checkin": "8/19", "checkout": "8/23", "nights": "4 晚" },
-    "stay2": { "label": "住宿・馬尼拉(第二段)", "name": "Somerset Central Salcedo Makati", "checkin": "8/23", "checkout": "8/24 12:00", "nights": "1 晚" },
-    "car": { "label": "租車・Keddy by Europcar", "name": "Toyota Vios 或同級", "pickup": "8/17 17:00", "dropoff": "8/24 15:00", "days": "7 天", "note": "訂單編號 TKR904885" },
-    "returnFlight": { "label": "回程航班", "code": "CI 704", "route": "MNL → TPE", "date": "8/24(一)起飛", "depart": "16:50", "arrive": "19:05", "duration": "2小時15分", "note": "建議 14:50 前抵達馬尼拉機場" }
+    "outbound": {
+      "label": "去程航班",
+      "code": "CI 703",
+      "route": "TPE → MNL",
+      "date": "8/17(一)起飛",
+      "depart": "13:30",
+      "arrive": "15:50",
+      "duration": "2小時20分",
+      "note": "建議 11:30 前抵達桃園機場"
+    },
+    "stay1": {
+      "label": "住宿・馬尼拉(第一段)",
+      "name": "Somerset Central Salcedo Makati",
+      "checkin": "8/17 14:00",
+      "checkout": "8/19 12:00",
+      "nights": "2 晚"
+    },
+    "laUnion": {
+      "label": "住宿・La Union",
+      "name": "Ciabel Hotel and Fitness Center",
+      "checkin": "8/19",
+      "checkout": "8/23",
+      "nights": "4 晚"
+    },
+    "stay2": {
+      "label": "住宿・馬尼拉(第二段)",
+      "name": "Somerset Central Salcedo Makati",
+      "checkin": "8/23",
+      "checkout": "8/24 12:00",
+      "nights": "1 晚"
+    },
+    "car": {
+      "label": "租車・Keddy by Europcar",
+      "name": "Toyota Vios 或同級",
+      "pickup": "8/17 17:00",
+      "dropoff": "8/24 15:00",
+      "days": "7 天",
+      "note": "訂單編號 TKR904885"
+    },
+    "returnFlight": {
+      "label": "回程航班",
+      "code": "CI 704",
+      "route": "MNL → TPE",
+      "date": "8/24(一)起飛",
+      "depart": "16:50",
+      "arrive": "19:05",
+      "duration": "2小時15分",
+      "note": "建議 14:50 前抵達馬尼拉機場"
+    }
   },
   "warning": {
     "icon": "✅",
@@ -25,86 +68,253 @@
   },
   "days": [
     {
-      "day": 1, "date": "8/17(一)",
-      "am1": { "text": "*待規劃" },
-      "am2": { "text": "桃園機場報到、安檢(11:30前抵達)" },
-      "pm1": { "tag": "flight", "tagLabel": "飛機", "text": "13:30 CI703 起飛 TPE→MNL" },
-      "pm2": { "text": "15:50 抵達馬尼拉,入境提領行李", "note": "換匯 USD→PHP,建議選在百貨公司/購物中心(mall)內換匯較划算" },
-      "ev1": { "tag": "hotel", "tagLabel": "住宿", "text": "Check-in Somerset Central Salcedo Makati(14:00起)" },
-      "ev2": { "text": "*待規劃" }
+      "day": 1,
+      "date": "8/17(一)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "text": "桃園機場報到、安檢(11:30前抵達)"
+      },
+      "pm1": {
+        "tag": "flight",
+        "tagLabel": "飛機",
+        "text": "13:30 CI703 起飛 TPE→MNL"
+      },
+      "pm2": {
+        "text": "15:50 抵達馬尼拉,入境提領行李",
+        "note": "換匯 USD→PHP,建議選在百貨公司/購物中心(mall)內換匯較划算"
+      },
+      "ev1": {
+        "tag": "hotel",
+        "tagLabel": "住宿",
+        "text": "Check-in Somerset Central Salcedo Makati(14:00起)"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 2, "date": "8/18(二)",
-      "am1": { "text": "*待規劃" }, "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" }, "pm2": { "text": "*待規劃" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 2,
+      "date": "8/18(二)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "text": "*待規劃"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 3, "date": "8/19(三)",
-      "am1": { "tag": "hotel", "tagLabel": "退房", "text": "12:00前退房 Somerset Central Salcedo Makati" },
-      "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" },
-      "pm2": { "tag": "hotel", "tagLabel": "住宿", "text": "Check-in Ciabel Hotel and Fitness Center" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 3,
+      "date": "8/19(三)",
+      "am1": {
+        "tag": "hotel",
+        "tagLabel": "退房",
+        "text": "12:00前退房 Somerset Central Salcedo Makati"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "tag": "hotel",
+        "tagLabel": "住宿",
+        "text": "Check-in Ciabel Hotel and Fitness Center"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 4, "date": "8/20(四)",
-      "am1": { "text": "*待規劃" }, "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" }, "pm2": { "text": "*待規劃" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 4,
+      "date": "8/20(四)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "text": "*待規劃"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 5, "date": "8/21(五)",
-      "am1": { "text": "*待規劃" }, "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" }, "pm2": { "text": "*待規劃" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 5,
+      "date": "8/21(五)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "text": "*待規劃"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 6, "date": "8/22(六)",
-      "am1": { "text": "*待規劃" }, "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" }, "pm2": { "text": "*待規劃" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 6,
+      "date": "8/22(六)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "text": "*待規劃"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 7, "date": "8/23(日)",
-      "am1": { "tag": "hotel", "tagLabel": "退房", "text": "Ciabel Hotel and Fitness Center" },
-      "am2": { "text": "*待規劃" },
-      "pm1": { "text": "*待規劃" },
-      "pm2": { "tag": "hotel", "tagLabel": "住宿", "text": "Check-in Somerset Central Salcedo Makati" },
-      "ev1": { "text": "*待規劃" }, "ev2": { "text": "*待規劃" }
+      "day": 7,
+      "date": "8/23(日)",
+      "am1": {
+        "tag": "hotel",
+        "tagLabel": "退房",
+        "text": "Ciabel Hotel and Fitness Center"
+      },
+      "am2": {
+        "text": "*待規劃"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "tag": "hotel",
+        "tagLabel": "住宿",
+        "text": "Check-in Somerset Central Salcedo Makati"
+      },
+      "ev1": {
+        "text": "*待規劃"
+      },
+      "ev2": {
+        "text": "*待規劃"
+      }
     },
     {
-      "day": 8, "date": "8/24(一)",
-      "am1": { "text": "*待規劃" },
-      "am2": { "tag": "hotel", "tagLabel": "退房", "text": "12:00前退房 Somerset Central Salcedo Makati" },
-      "pm1": { "text": "*待規劃" },
-      "pm2": { "text": "前往機場(14:50前抵達)" },
-      "ev1": { "tag": "flight", "tagLabel": "飛機", "text": "16:50 CI704 起飛 MNL→TPE" },
-      "ev2": { "text": "19:05 抵達桃園機場,入境返家" }
+      "day": 8,
+      "date": "8/24(一)",
+      "am1": {
+        "text": "*待規劃"
+      },
+      "am2": {
+        "tag": "hotel",
+        "tagLabel": "退房",
+        "text": "12:00前退房 Somerset Central Salcedo Makati"
+      },
+      "pm1": {
+        "text": "*待規劃"
+      },
+      "pm2": {
+        "text": "前往機場(14:50前抵達)"
+      },
+      "ev1": {
+        "tag": "flight",
+        "tagLabel": "飛機",
+        "text": "16:50 CI704 起飛 MNL→TPE"
+      },
+      "ev2": {
+        "text": "19:05 抵達桃園機場,入境返家"
+      }
     }
   ],
   "todos": {
     "sim": {
       "title": "電話卡",
       "items": [
-        { "text": "確認網路方案(eSIM 或實體 SIM 卡)", "note": "可於桃園機場、當地便利商店或線上預訂購買", "checked": false },
-        { "text": "確認手機支援 eSIM / 已開啟雙卡雙待", "note": "", "checked": false }
+        {
+          "text": "確認網路方案(eSIM 或實體 SIM 卡)",
+          "note": "可於桃園機場、當地便利商店或線上預訂購買",
+          "checked": false
+        },
+        {
+          "text": "確認手機支援 eSIM / 已開啟雙卡雙待",
+          "note": "",
+          "checked": false
+        }
       ]
     },
     "car": {
       "title": "租車",
       "items": [
-        { "text": "確認 Toyota Vios 租車訂單與 MNL 取車地點", "note": "Keddy by Europcar・訂單編號 TKR904885・8/17 17:00取車・8/24 15:00還車,共7天", "checked": false },
-        { "text": "攜帶國際駕照 / 台灣駕照正本", "note": "", "checked": false },
-        { "text": "取車時確認保險範圍與車輛既有損傷", "note": "", "checked": false },
-        { "text": "必備物品:RFID 電子貼紙", "note": "貼紙性質:不是車機,而是貼在擋風玻璃或頭燈上的 RFID 標籤貼紙(由收費站人員協助安裝)。兩大主流系統:Easytrip(北部高速公路,如 NLEX、SCTEX、CALAX、CAVITEX)/ Autosweep(南部及主要快速道路,如 SLEX、Skyway、TPLEX、STAR Tollway、NAIAX)。最便利做法:租車時可直接申辦「One RFID」互通方案 —— 登記其中一個帳號並申請綁定至另一系統,一張貼紙即可通行呂宋島所有高速公路。", "checked": false }
+        {
+          "text": "確認 Toyota Vios 租車訂單與 MNL 取車地點",
+          "note": "Keddy by Europcar・訂單編號 TKR904885・8/17 17:00取車・8/24 15:00還車,共7天",
+          "checked": false
+        },
+        {
+          "text": "攜帶國際駕照 / 台灣駕照正本",
+          "note": "",
+          "checked": false
+        },
+        {
+          "text": "取車時確認保險範圍與車輛既有損傷",
+          "note": "",
+          "checked": false
+        },
+        {
+          "text": "必備物品:RFID 電子貼紙",
+          "note": "貼紙性質:不是車機,而是貼在擋風玻璃或頭燈上的 RFID 標籤貼紙(由收費站人員協助安裝)。兩大主流系統:Easytrip(北部高速公路,如 NLEX、SCTEX、CALAX、CAVITEX)/ Autosweep(南部及主要快速道路,如 SLEX、Skyway、TPLEX、STAR Tollway、NAIAX)。最便利做法:租車時可直接申辦「One RFID」互通方案 —— 登記其中一個帳號並申請綁定至另一系統,一張貼紙即可通行呂宋島所有高速公路。",
+          "checked": false
+        }
       ]
     },
     "surf": {
       "title": "衝浪板租借",
       "items": [
-        { "text": "預訂 Urbiztondo Beach 衝浪板租借 / 教練課程", "note": "建議安排在第4–7天(8/20–8/23)", "checked": false },
-        { "text": "確認租借費用與退還時間", "note": "", "checked": false }
+        {
+          "text": "預訂 Urbiztondo Beach 衝浪板租借 / 教練課程",
+          "note": "建議安排在第4–7天(8/20–8/23)",
+          "checked": false
+        },
+        {
+          "text": "確認租借費用與退還時間",
+          "note": "",
+          "checked": false
+        }
       ]
     }
   },
@@ -112,21 +322,181 @@
     "manila": {
       "label": "Manila",
       "categories": {
-        "brunch": { "title": "早午餐", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "dinner": { "title": "晚餐", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "bar": { "title": "消夜酒吧", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "outdoor": { "title": "戶外景點", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "indoor": { "title": "室內景點", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] }
+        "brunch": {
+          "title": "早午餐",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "dinner": {
+          "title": "晚餐",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "bar": {
+          "title": "消夜酒吧",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "outdoor": {
+          "title": "戶外景點",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "indoor": {
+          "title": "室內景點",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        }
       }
     },
     "launion": {
       "label": "La Union",
       "categories": {
-        "brunch": { "title": "早午餐", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "dinner": { "title": "晚餐", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "bar": { "title": "消夜酒吧", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "outdoor": { "title": "戶外景點", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] },
-        "indoor": { "title": "室內景點", "items": [ { "name": "", "checked": false }, { "name": "", "checked": false }, { "name": "", "checked": false } ] }
+        "brunch": {
+          "title": "早午餐",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "dinner": {
+          "title": "晚餐",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "bar": {
+          "title": "消夜酒吧",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "outdoor": {
+          "title": "戶外景點",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        },
+        "indoor": {
+          "title": "室內景點",
+          "items": [
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            },
+            {
+              "name": "",
+              "checked": false
+            }
+          ]
+        }
       }
     }
   }
