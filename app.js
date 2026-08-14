@@ -6,6 +6,14 @@
   var FILE = "data.json";
   var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FILE;
   var TOKEN_KEY = "ph_trip_planner_gh_pat";
+  var ISSUE_URL =
+    "https://github.com/" + OWNER + "/" + REPO + "/issues/new" +
+    "?title=" + encodeURIComponent("申請編輯權限") +
+    "&body=" + encodeURIComponent(
+      "請填寫以下資訊,擁有者確認後會把你加為 repo 協作者(Settings → Collaborators),之後你就能用自己的 GitHub Token 編輯行程。\n\n" +
+      "GitHub 帳號:\n" +
+      "想申請的原因(選填):\n"
+    );
 
   var state = null;
   var sha = null;
@@ -95,7 +103,7 @@
   function toast(msg, isError) {
     var t = el("div", { className: "toast" + (isError ? " error" : ""), text: msg });
     document.body.appendChild(t);
-    setTimeout(function () { t.remove(); }, 3200);
+    setTimeout(function () { t.remove(); }, 4800);
   }
 
   // ---------- token modal ----------
@@ -104,8 +112,13 @@
     var backdrop = el("div", { className: "modal-backdrop" }, [
       el("div", { className: "modal" }, [
         el("h3", { text: "輸入編輯權杖" }),
-        el("p", { html: "需要一組對 <b>" + OWNER + "/" + REPO + "</b> repo 有 Contents 讀寫權限的 Fine-grained Personal Access Token。輸入後只會存在你的瀏覽器 localStorage,不會傳送給任何人。" }),
+        el("p", { html: "需要用<b>你自己的 GitHub 帳號</b>產生一組對 <b>" + OWNER + "/" + REPO + "</b> repo 有 Contents 讀寫權限的 Fine-grained Personal Access Token。輸入後只會存在你的瀏覽器 localStorage,不會傳送給任何人。" }),
+        el("p", { html: "如果你還不是這個 repo 的協作者(collaborator),Token 產生得出來但存檔會失敗 —— 請先點下方「申請編輯權限」。" }),
         input,
+        el("div", { className: "modal-actions", style: "justify-content:space-between;" }, [
+          el("a", { className: "btn", href: ISSUE_URL, target: "_blank", rel: "noopener", text: "申請編輯權限" }),
+          el("span", {}),
+        ]),
         el("div", { className: "modal-actions" }, [
           el("button", { className: "btn", text: "取消", onclick: function () { backdrop.remove(); } }),
           el("button", { className: "btn primary", text: "確認", onclick: function () {
@@ -143,6 +156,15 @@
     );
 
     if (!editMode) {
+      topbarActions.appendChild(
+        el("a", {
+          className: "btn",
+          href: ISSUE_URL,
+          target: "_blank",
+          rel: "noopener",
+          text: "申請編輯權限",
+        })
+      );
       topbarActions.appendChild(
         el("button", {
           className: "btn primary",
@@ -194,9 +216,13 @@
         }
         if (e.status === 409) {
           toast("儲存衝突:資料已在別處被更新,請先「重新整理」再編輯", true);
-        } else if (e.status === 401 || e.status === 403) {
-          toast("Token 無效或權限不足,請重新輸入", true);
+        } else if (e.status === 401) {
+          toast("Token 無效或已過期,請重新輸入", true);
           setToken("");
+        } else if (e.status === 403) {
+          toast("Token 有效,但這個帳號還沒有此 repo 的協作者權限,請先「申請編輯權限」", true);
+        } else if (e.status === 404) {
+          toast("找不到 repo 或檔案,請確認 Token 的 Repository access 有勾選這個 repo", true);
         } else {
           toast("儲存失敗: " + e.message, true);
         }
@@ -482,6 +508,7 @@
         el("li", { text: "除了機票與住宿的入住/退房資訊,其餘活動預設為「*待規劃」,可在編輯模式中直接填入實際安排。" }),
         el("li", { text: "景點分類中未命名的項目會顯示「*待補充」,填入名稱後記得勾選「已排入行程」方框並到逐日行程對應欄位補上。" }),
         el("li", { text: "資料儲存在本 repo 的 data.json,任何裝置開啟本頁都會讀到最新版本;編輯需要輸入具備 Contents 讀寫權限的 GitHub Token。" }),
+        el("li", { text: "編輯權限採 GitHub 協作者制:想編輯的人先點「申請編輯權限」送出請求,擁有者到 repo 的 Settings → Collaborators 手動加入該 GitHub 帳號後,對方才能用自己的 Token 成功存檔。" }),
       ]),
     ]);
     container.appendChild(box);
