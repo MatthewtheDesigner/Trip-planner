@@ -122,7 +122,8 @@
       "am1": {
         "tag": "hotel",
         "tagLabel": "退房",
-        "text": "12:00前退房 Somerset Central Salcedo Makati"
+        "text": "12:00前退房 Somerset Central Salcedo Makati",
+        "note": "吃完早餐去確認到San Juan 的巴士票，倘若時間很差直接開到la union "
       },
       "am2": {
         "text": "午餐"
